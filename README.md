@@ -1,10 +1,23 @@
-# Mediaelement::HDToggle
-This is a mediaelement.js plugin that adds an HD toggle to the control bar. It allows users to toggle between 2 specified qualities. (ex. HD/SD)
+# Mediaelement HDToggle
+This is a [mediaelement.js](http://mediaelementjs.com/) plugin that adds an HD toggle to the control bar. It allows users to toggle between 2 specified qualities. (ex. HD/SD)
 
 ![](https://i.imgur.com/8WXhP4w.png)
 
 ## Installation
-Download and add the JS and CSS file in your project
+Download the files via [ZIP](https://github.com/opixido/mediaelement-hd-toggle/archive/master.zip),  _git cloning_ or install via **bower**
+
+```cmd
+$ bower install mediaelement-hd-toggle --save-dev
+```
+
+and add the files to tour HTML
+
+```html
+<link rel="stylesheet" href="bower_components/mediaelement-hd-toggle/css/mejs-hdtoggle.css" />
+<script
+src="bower_components/mediaelement-hd-toggle/js/mep-feature-hdtoggle.js">
+</script>
+```
 
 ## Usage
 You need to specify the quality of your sources on each <source> tag via the **data-quality** attribute ex. :
