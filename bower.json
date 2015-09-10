@@ -1,0 +1,29 @@
+{
+  "name": "mediaelement-hd-toggle",
+  "version": "0.1",
+  "homepage": "https://github.com/opixido/mediaelement-hd-toggle",
+  "authors": [
+    "Celio <celio@opixido.com>"
+  ],
+  "description": "Medialementjs plugin that adds a button to toggle video quality",
+  "main": "js/mep-feature-hdtoggle.js",
+  "moduleType": [
+    "globals"
+  ],
+  "keywords": [
+    "medialement",
+    "mediaelementjs",
+    "video",
+    "hd",
+    "webm",
+    "mp4"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
