@@ -1,12 +1,11 @@
-.mejs-avalon .mejs-controls .mejs-hdtoggle-button button {
+.mejs-video .mejs-controls .mejs-hdtoggle-button button {
     color: #606060;
-    font-size: 14pt;
-    font-weight: bold;
+    font-size: 11px;
+    padding:0;
     background: none;
     text-decoration: line-through;
 }
-
-.mejs-avalon .mejs-controls .mejs-hdtoggle-button.mejs-hdtoggle-on button {
+.mejs-video .mejs-controls .mejs-hdtoggle-button.mejs-hdtoggle-on button {
     color: #dedede;
     text-decoration: none;
 }

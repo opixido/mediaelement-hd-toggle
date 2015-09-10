@@ -1,7 +1,13 @@
 # Mediaelement HDToggle
 This is a [mediaelement.js](http://mediaelementjs.com/) plugin that adds an HD toggle to the control bar. It allows users to toggle between 2 specified qualities. (ex. HD/SD)
 
+[Demo with basic style](http://codepen.io/gavrochelegnou/details/eppdea/)
+
+Demo with custom styling :
+
 ![](https://i.imgur.com/8WXhP4w.png)
+
+
 
 ## Installation
 Download the files via [ZIP](https://github.com/opixido/mediaelement-hd-toggle/archive/master.zip),  _git cloning_ or install via **bower**
