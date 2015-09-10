@@ -83,3 +83,10 @@ hdToggleLabel: 'HD'
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
 5. Create new Pull Request
+
+## Credits
+
+* [Opixido](http://opixido.com)
+* [Avalon Media System](https://github.com/avalonmediasystem) for the original code
+
+<a href="http://opixido.com"><img width="100" src="http://opixido.com/2015/img/vignette_logo.png" alt="Opixido"></a>
