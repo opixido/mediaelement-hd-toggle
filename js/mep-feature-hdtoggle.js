@@ -105,7 +105,7 @@
                 '       aria-controls="' + player.id + '" ' +
                 '       title="' + player.options.hdToggleTitle + '"' +
                 '       aria-label="' + player.options.hdToggleTitle + '"' +
-                '>' + player.options.hdToggleTitle + '</button>' +
+                '>' + player.options.hdToggleLabel + '</button>' +
                 '</div>').click(
                 function () {
                     /**

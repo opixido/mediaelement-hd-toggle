@@ -3,8 +3,10 @@
     font-size: 14pt;
     font-weight: bold;
     background: none;
+    text-decoration: line-through;
 }
 
 .mejs-avalon .mejs-controls .mejs-hdtoggle-button.mejs-hdtoggle-on button {
     color: #dedede;
+    text-decoration: none;
 }
