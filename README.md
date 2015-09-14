@@ -2,6 +2,7 @@
 This is a [mediaelement.js](http://mediaelementjs.com/) plugin that adds an HD toggle to the control bar. It allows users to toggle between 2 specified qualities. (ex. HD/SD)
 
 [Demo on Codepen.io with basic style](http://codepen.io/gavrochelegnou/details/eppdea/)
+
 ![](https://i.imgur.com/ZZFaxUz.png)
 
 Demo with custom styling :
