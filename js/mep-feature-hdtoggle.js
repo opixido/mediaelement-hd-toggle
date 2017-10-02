@@ -54,6 +54,8 @@
             player.nbPlayableSources = 0;
 
 
+            media = $(media).find('video')[0];
+
             /**
              * Looping over all sources
              */
@@ -99,7 +101,7 @@
             /**
              * Let's create the button
              */
-            player.hdtoggleButton = $('<div class="mejs-button mejs-hdtoggle-button">' +
+            player.hdtoggleButton = $('<div class="mejs__button mejs__hdtoggle-button">' +
                 '<button ' +
                 '       type="button" ' +
                 '       aria-controls="' + player.id + '" ' +
@@ -107,13 +109,14 @@
                 '       aria-label="' + player.options.hdToggleTitle + '"' +
                 '>' + player.options.hdToggleLabel + '</button>' +
                 '</div>').click(
-                function () {
+                function (e) {
                     /**
                      * And add the click action
                      */
-                    player.toggleQuality();
+                    player.toggleQuality(e);
                 }
             ).appendTo(controls);
+            //this.addControlElement(player.hdtoggleButton[0], 'hdtoggle');
 
 
             if (player.options.hdToggleOn && player.qualities[player.options.hdToggleBetween[0]] != null) {
@@ -121,7 +124,7 @@
                  * If we were asked to set the HD per default and we found an HD file
                  * Then  let's play the HD file ...
                  */
-                player.hdtoggleButton.addClass("mejs-hdtoggle-on");
+                player.hdtoggleButton.addClass("mejs__hdtoggle-on");
                 player.switchStream(player.qualities[player.options.hdToggleBetween[0]]);
             } else if (player.qualities[player.options.hdToggleBetween[1]] != null) {
                 /**
@@ -141,21 +144,26 @@
          * We clicked on the HD button
          * Let's change our source
          */
-        toggleQuality: function () {
+        toggleQuality: function (e) {
+
+            e.preventDefault();
+
             var btn = this.hdtoggleButton;
 
-            if (btn.hasClass("mejs-hdtoggle-on")) {
+            if (btn.hasClass("mejs__hdtoggle-on")) {
+
                 /**
                  * If we were in HD
                  * Let's go to SD
                  */
-                btn.removeClass("mejs-hdtoggle-on");
+                btn.removeClass("mejs__hdtoggle-on");
                 this.switchStream(this.qualities[this.options.hdToggleBetween[1]]);
             } else {
+
                 /**
                  * And vice-versa
                  */
-                btn.addClass("mejs-hdtoggle-on");
+                btn.addClass("mejs__hdtoggle-on");
                 this.switchStream(this.qualities[this.options.hdToggleBetween[0]]);
             }
         },
