@@ -42,10 +42,11 @@
             player.qualities = [];
 
             /**
-             * List of all sources as declared in HTML
+             * List of all sources as declared in HTML and returned by MEJS
              * @type {*|{}}
              */
-            player.sources = $(player.domNode).find("source");
+            player.sources = player.mediaFiles;
+
 
             /**
              * Number of playable sources found (should be 2 max as it's only a toggle)
@@ -67,6 +68,7 @@
                  */
                 if ((media.canPlayType(src.type) == 'probably' || media.canPlayType(src.type) == 'maybe')) {
 
+
                     /**
                      * Then we loop over our qualities
                      */
@@ -75,15 +77,13 @@
                          * And if the quality of the source matches one of our owns
                          * And the playables sources are not all found (<2)
                          */
-                        if (src.getAttribute("data-quality") == player.options.hdToggleBetween[j] && player.nbPlayableSources < 2) {
-
+                        if (src['data-quality'] == player.options.hdToggleBetween[j] && player.nbPlayableSources < 2) {
                             /**
                              * The we add our qualities
                              * @type {*|string}
                              */
-                            player.qualities[player.options.hdToggleBetween[j]] = src.getAttribute("src");
+                            player.qualities[player.options.hdToggleBetween[j]] = src.src;
                             player.nbPlayableSources++;
-
                         }
                     }
                 }
@@ -245,4 +245,7 @@
             }
         }
     });
+
 })(mejs.$);
+
+
